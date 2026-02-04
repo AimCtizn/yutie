@@ -73,6 +73,39 @@
       line-height: 1.5;
     }
 
+    /* Estilo para lista de tarefas */
+    .task-list {
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    .task-list input {
+      padding: 8px;
+      width: 70%;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .task-list button {
+      padding: 8px 12px;
+      background-color: #1fbdf2;
+      border: none;
+      border-radius: 5px;
+      color: #0d0d0d;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .task-list ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .task-list li {
+      margin-bottom: 8px;
+    }
+
     footer {
       background: #111;
       text-align: center;
@@ -95,6 +128,8 @@
       <a href="#pressao">Pressão</a>
       <a href="#corrida">Corrida</a>
       <a href="#funcoes">Funções</a>
+      <a href="#antiprocrastinacao">Antiprocrastinação</a>
+      <a href="#tarefas">Tarefas</a>
     </nav>
   </header>
 
@@ -123,10 +158,38 @@
       <h2>Funções Comuns</h2>
       <p>Receba notificações, controle músicas, veja calendário e muito mais.</p>
     </section>
+
+    <section id="antiprocrastinacao">
+      <h2>Modo Antiprocrastinação</h2>
+      <p>Receba alertas inteligentes para manter o foco e evitar distrações durante suas atividades.</p>
+    </section>
+
+    <section id="tarefas">
+      <h2>Gerenciamento de Tarefas</h2>
+      <p>Adicione e acompanhe suas tarefas diretamente no smartwatch.</p>
+      <div class="task-list">
+        <input type="text" id="newTask" placeholder="Digite uma tarefa...">
+        <button onclick="addTask()">Adicionar</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Smartwatch Clarity - Todos os direitos reservados</p>
   </footer>
+
+  <script>
+    function addTask() {
+      const taskInput = document.getElementById("newTask");
+      const taskValue = taskInput.value.trim();
+      if (taskValue !== "") {
+        const li = document.createElement("li");
+        li.textContent = taskValue;
+        document.getElementById("taskList").appendChild(li);
+        taskInput.value = "";
+      }
+    }
+  </script>
 </body>
 </html>
