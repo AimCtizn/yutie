@@ -1,62 +1,132 @@
-<! DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<title>Desenvolvimento Sustentavel</title>
-<meta name='viewport' content='width=device-width, initial-
-scale=1'>
-<link rel='stylesheet' type='text/css' media='screen'
-href='style.css'>
-<script src='main.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartwatch X</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00ffcc;
+    }
+
+    header h1 {
+      color: #00ffcc;
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    main {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    section {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #00ffcc;
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.05);
+    }
+
+    section h2 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #00ffcc;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-<header><p><img id="TITULOIMAGEM" src="logo.jpeg"
-alt=""DESCRICAO IMAGEM"></p>
-<nav>
-<ul id="lista01">
-<li><a target="_blank" href="index.html">Home</li>
-<li><a target="_blank"
-href="http://www.consultaescolas.pr.gov.br/ ">Site do
-Colégio</li>
-<li><a target="_blank"
-href="https://www.facebook.com/profile.php?
-id=100009582499964">Facebook</li></a>
-</ul>
-</nav>
-</header>
-<main>
-<h1>Desenvolvimento Sustentavel</h1>
-<div class="PRIMEIROPARAGRAFO">
-<h3>
-Definição
-Importância 
-Exemplos
-</h3>
-<p><i><b>TEXTO</b></i></p>
-<ul id="lista02">
-<li>O desenvolvimento sustentável é um conceito que surgiu na década de 1980, definido pela ONU como "o desenvolvimento que atende às necessidades do presente sem comprometer a capacidade das gerações futuras de atender às suas próprias necessidades". Isso significa que o desenvolvimento sustentável busca equilibrar o crescimento econômico, a proteção ambiental e a justiça social, garantindo que as necessidades básicas sejam atendidas sem comprometer o meio ambiente e a qualidade de vida das futuras gerações.</p></li>
-<li>A importância do desenvolvimento sustentável pode ser resumida dentre alguns pontos-chave:
+  <header>
+    <h1>Smartwatch X</h1>
+    <nav>
+      <a href="#pulso">Pulso</a>
+      <a href="#sono">Sono</a>
+      <a href="#pressao">Pressão</a>
+      <a href="#corrida">Corrida</a>
+      <a href="#funcoes">Funções</a>
+    </nav>
+  </header>
 
-1. Proteção Ambiental: Preserva os recursos naturais, reduz a poluição e combate as mudanças climáticas.
-2. Justiça Social: Promove a igualdade, a inclusão e o acesso a oportunidades para todos.
-3. Crescimento Econômico: Fomenta o desenvolvimento econômico de forma responsável e sustentável.
-4. Qualidade de Vida: Melhora a saúde, a educação e o bem-estar das pessoas.
-5. Segurança Alimentar: Garante o acesso a alimentos saudáveis e sustentáveis.</li>
-    <li><p> alguns exemplos práticos de desenvolvimento sustentável</p>
+  <main>
+    <section id="pulso">
+      <h2>Monitor de Pulso</h2>
+      <p>Acompanhe sua frequência cardíaca em tempo real com sensores precisos.</p>
+    </section>
 
-<p>1. *Energias Renováveis*: Investimento em fontes de energia solar, eólica e hidrelétrica para reduzir a dependência de combustíveis fósseis.</p>
-2. *Agricultura Sustentável*: Práticas agrícolas que preservam o solo, a água e a biodiversidade, como a agrofloresta e a permacultura.
-3. *Reciclagem e Reutilização*: Programas de reciclagem e reutilização de materiais para reduzir o desperdício e a poluição.
-4. *Transporte Sustentável*: Investimento em transporte público, bicicletas e veículos elétricos para reduzir as emissões de gases de efeito estufa.
-5. *Construção Sustentável*: Edifícios e habitações projetados para serem eficientes em termos de energia, água e materiais.
-6. *Turismo Sustentável*: Práticas turísticas que respeitam a cultura local, a biodiversidade e o meio ambiente.
-7. *Educação Ambiental*: Programas de educação que promovem a conscientização e a ação em prol do meio ambiente.</li>
-</ul>
-</div>
-<h1> images </h1>
-</main>
-<footer></footer>
+    <section id="sono">
+      <h2>Contador de Sono</h2>
+      <p>Analise a qualidade do seu sono com gráficos detalhados e relatórios diários.</p>
+    </section>
 
+    <section id="pressao">
+      <h2>Pressão Arterial</h2>
+      <p>Monitore sua pressão arterial de forma prática e segura diretamente no pulso.</p>
+    </section>
+
+    <section id="corrida">
+      <h2>Monitor de Corrida</h2>
+      <p>Registre distância, tempo e calorias queimadas durante seus treinos.</p>
+    </section>
+
+    <section id="funcoes">
+      <h2>Funções Comuns</h2>
+      <p>Receba notificações, controle músicas, veja calendário e muito mais.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Smartwatch X - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
